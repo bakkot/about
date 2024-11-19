@@ -54,15 +54,15 @@
   <p>Prose, on various topics.</p>
 
   <h3><a href="https://github.com/tc39/ecma262">ECMA-262</a></h3>
-  <p>The JavaScript specification. I have been serving as editor since 2020.</p>
+  <p>The JavaScript specification. I have been contributing to the development of the language since 2015 and serving as editor of the specification since 2020.</p>
   <details>
     <summary>More details</summary>
     <div>
+      <p>In pursuit of filling out some of the missing basic functionality in the standard library, I championed the addition of <b><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries">Object.fromEntries</a></b>, <b><a href="https://github.com/tc39/proposal-set-methods">Set union and friends</a></b>, and <b><a href="https://github.com/tc39/proposal-arraybuffer-base64">native base64 support</a></b>, among others.</p>
       <p>As part of my editorship I took over maintainence of <b><a href="https://github.com/tc39/ecmarkup/">ecmarkup</a></b>, the tool used to produce the specification. Among other things, I added support for <a href="https://tc39.es/ecma262/multipage/">multipage builds</a> and wrote a prettier-syle <a href="https://github.com/tc39/ecmarkup/pull/367">auto-formatter</a>.</p>
       <p>With a co-editor, I <b><a href="https://github.com/tc39/ecma262/pull/2271">reorganized certain kinds of algorithm</a></b> to make them easier to follow.</p>
-      <p>I've been trying to remove inconsistencies and underspecifications more generally. For example, I championed <b><a href="https://github.com/tc39/proposal-for-in-order">a proposal to nail down property enumeration order</a></b> in common cases.</b></p>
-      <p>In pursuit of filling out some of the missing basic functionality in the standard library, I championed the addition of <b><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries">Object.fromEntries</a></b>.</p>
-      <p>I also built <b><a href="https://bakkot.github.io/test262-web-runner/">a web-based runner for the test262</a></b>, the official test suite for JavaScript implementations.</p>
+      <p>I've been trying to remove inconsistencies and underspecifications more generally. For example, I championed <b><a href="https://github.com/tc39/proposal-for-in-order">a proposal to nail down property enumeration order</a></b> in common cases</b>. I now have <a href="https://github.com/tc39/ecma262/graphs/contributors">the second most commits to the spec's repository on GitHub</a>, although that does not capture contributions others made during the two decades when the spec was a Word document.</p>
+      <p>I also built <b><a href="https://bakkot.github.io/test262-web-runner/">a web-based runner for test262</a></b>, the official test suite for JavaScript implementations.</p>
     </div>
   </details>
 
@@ -96,10 +96,19 @@
 
   <h3><a href="https://github.com/bakkot/dfa-lib">dfa-lib</a> and <a href="https://github.com/bakkot/cfgrammar-tool">cfgrammar-tool</a></h3>
   <p>Tools for working with regular and context-free languages in JS. These were mainly aimed at improving the experience in CS103 at Stanford when I was a TA there, both for students and, by automating certain grading tasks, for teachers. The tools remained in use for several years after I left.</p>
-  <p>Using dfa-lib I built <b><a href="https://bakkot.github.io/dfa-lib/regeq.html">a tool for checking equivalence of regular expressions</a></b>, including giving counterexamples when the expressions are not equivalent.</p>
+  <p>Using dfa-lib I built <a href="https://bakkot.github.io/dfa-lib/regeq.html">a tool for checking equivalence of regular expressions</a>, including giving counterexamples when the expressions are not equivalent.</p>
 
-  <h3><a href="http://timer.bakkot.com/">timer.bakkot.com</a></h3>
-  <p>A web page which shows a timer without any other cruft. Not remotely technically interesting, but still useful.</p>
+  <h3>Minor contributions to other people's projects</h3>
+  <p>I try to make improvements to the tools I use when I can reasonably do so. For example, I've</p>
+  <ul>
+    <li>written a couple dozen <a href="https://github.com/prettier/prettier/pulls?q=is%3Apr+author%3Abakkot">tweaks and fixes</a> for Prettier, including <b><a href="https://github.com/prettier/prettier/pull/15209">fixing</a></b> one of the <a href="https://github.com/prettier/prettier/issues/3368">longest-standing issues</a> (printing template strings on a single line)
+    <li><a href="https://github.com/pkgjs/parseargs/issues?q=involves%3Abakkot">contributed to</a> the design of Node's built-in argument parser <code>parseArgs</code>
+    <li>made small UX improvements to <a href="https://github.com/tubearchivist/tubearchivist/pulls?q=is%3Apr+author%3Abakkot+">TubeArchivist</a> and <a href="https://github.com/tubearchivist/browser-extension/pulls?q=is%3Apr+author%3Abakkot">its browser extension</a>
+    <li>added <a href="https://github.com/microsoft/TypeScript/pulls?q=is%3Apr+author%3Abakkot">TypeScript</a> <a href="https://github.com/DefinitelyTyped/DefinitelyTyped/pulls?q=is%3Apr+author%3Abakkot">types</a> for various built-in methods, and improved some diagnostics
+    <li>made an <a href="https://bytecodealliance.github.io/wasm-tools/parse">online playground</a> for wasm-tools
+    <li>gotten <a href="https://github.com/whatwg/fetch/pull/1753">a minor convenience method</a> added to <code>fetch</code> responses
+    <li>made minor tweaks to <a href="https://github.com/invoke-ai/InvokeAI/pulls?q=is%3Apr+author%3Abakkot+">InvokeAI</a> and <a href="https://github.com/ggerganov/llama.cpp/pulls?q=author%3Abakkot">llama.cpp</a>
+  </ul>
 
   <h3>Work stuff</h3>
   <p>I mostly can't talk in detail about projects I've done for work except the open source ones mentioned above, but I do have a patent from my intern project, <b><a href="https://patents.google.com/patent/US20180159830A1/en">an obfuscating JavaScript VM which is itself written in JavaScript</a></b>.</p>
